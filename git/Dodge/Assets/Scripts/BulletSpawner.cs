@@ -14,7 +14,7 @@ public class BulletSpawner : MonoBehaviour
         //최근 생성 이후의 누적 시간을 0으로 초기화
         timeAfterSpawn = 0f;
         //탄알 생성 간격을 spawnRateMin과 spawnRateMax 사이에서 랜덤 지정
-        spawnRateMax = Random.Range(spawnRateMin, spawnRateMax);
+        spawnRate = Random.Range(spawnRateMin, spawnRateMax);
         //PlayerDontroller 컴포넌트를 가진 게임 오브젝트를 찾아 조준 대상으로 설정
         target = FindObjectOfType<PlayerController>().transform;
     }
